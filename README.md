@@ -10,7 +10,7 @@ The intended use case is some kind of numerically intensive function that would
 benefit from JIT optimizations. Since awesomeX is intended to work automatically
 on the file level, existing code can be converted without extreme rewrites.
 
-A more advanced use case is planned that exposes function objects themselves, a
+A more advanced use case is planned that exposes function objects themselves. A
 use here would be to optimize and store functions with partial application.
 Imagine a regex function with a user-specified regex that is meant to run over
 tremendous amounts of input. Optimizing with a specific regex could expose
@@ -43,7 +43,7 @@ binary.
 
 Most of the terribleness is in the codegen phase, there are parts that range
 from bad to awful. I have a feeling LLVM has functions that do what I want
-buried somewhere and that codegen.c poorly duplicates functionality found
-elsewhere. If you have any ideas on how to clean it up please let me know!
+buried somewhere and that codegen.c poorly duplicates this functionality
+If you have any ideas on how to clean it up please let me know!
 
 <!-- vim: set tw=80: -->
