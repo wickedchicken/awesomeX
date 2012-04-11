@@ -2,7 +2,7 @@ awesomeX: an automatic function JITifier
 
 ----------------------------------------
 
-awesomeX is designed to automaticaly convert a standard C file's function
+awesomeX is designed to automatically convert a standard C file's function
 exports into LLVM bitcode. It goes one step further and automatically generates
 shim functions to run these bitcoded functions in the original calling code.
 
@@ -38,7 +38,7 @@ the future, codegen should be a program that reads straight off of the bitcode
 created in the original clang export of print.c (before llc). This linking thing
 is nonsense.
 
-FInally, awesomex, jitprint and main are linked together for the jitprint
+Finally, awesomex, jitprint and main are linked together for the jitprint
 binary.
 
 Most of the terribleness is in the codegen phase, there are parts that range
